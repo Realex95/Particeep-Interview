@@ -1,0 +1,128 @@
+body {
+    background-color: #373535;
+}
+
+h2, label, span, .white {
+    color: white;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.category-filter{
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 80px;
+}
+
+.movie-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.movie-card .delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05); 
+}
+
+.error {
+    color: red;
+}
+
+.dlikes {
+    margin: 20px;
+    padding: auto;
+}
+
+.likes:hover {
+    color: blue;
+}
+
+.likes.liked {
+    color: blue;
+}
+
+.likes {
+    border-radius: 25px 0 0 25px;
+    border: none;
+    padding: 10px;
+}
+
+.dislikes {
+    border-radius: 0 25px 25px 0;
+    border: none;
+    padding: 10px;
+}
+
+.dislikes:hover {
+    color: red;
+}
+
+.dislikes.disliked {
+    color: red;
+}
+
+.delete {
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .movie-grid {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .category-filter{
+    position: relative;
+    top: 0; 
+    left: 0; 
+    }
+
+}

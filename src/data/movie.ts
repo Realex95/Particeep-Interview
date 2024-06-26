@@ -1,0 +1,86 @@
+const movies = [
+    {
+      id: "1",
+      title: "Oceans 8",
+      images: "assets/Ocean8.jpg",
+      category: "Comedy",
+      likes: 4,
+      dislikes: 1,
+    },
+    {
+      id: "2",
+      title: "Midnight Sun",
+      images: "assets/MidnightSun.jpg",
+      category: "Comedy",
+      likes: 2,
+      dislikes: 0,
+    },
+    {
+      id: "3",
+      title: "Les indestructibles 2",
+      images: "assets/lesindestructibles2.jpg",
+      category: "Animation",
+      likes: 3,
+      dislikes: 1,
+    },
+    {
+      id: "4",
+      title: "Sans un bruit",
+      images: "assets/Sansunbruit.jpg",
+      category: "Thriller",
+      likes: 6,
+      dislikes: 6,
+    },
+    {
+      id: "5",
+      title: "Creed II",
+      images: "assets/Creed2.jpg",
+      category: "Drame",
+      likes: 16,
+      dislikes: 2,
+    },
+    {
+      id: "6",
+      title: "Pulp Fiction",
+      images: "assets/PulpFiction.jpg",
+      category: "Thriller",
+      likes: 11,
+      dislikes: 3,
+    },
+    {
+      id: "7",
+      title: "Saw X",
+      images: "assets/SawX.jpg",
+      category: "Thriller",
+      likes: 12333,
+      dislikes: 32,
+    },
+    {
+      id: "8",
+      title: "Seven",
+      images: "assets/Seven.jpg",
+      category: "Thriller",
+      likes: 2,
+      dislikes: 1,
+    },
+    {
+      id: "9",
+      title: "Inception",
+      images: "assets/Inception.jpg",
+      category: "Thriller",
+      likes: 2,
+      dislikes: 1,
+    },
+    {
+      id: "10",
+      title: "Gone Girl",
+      images: "assets/GoneGirl.jpg",
+      category: "Thriller",
+      likes: 22,
+      dislikes: 12,
+    },
+  ];
+  
+  export const movies$ = new Promise((resolve) => 
+    setTimeout(() => resolve(movies), 100)
+  );
